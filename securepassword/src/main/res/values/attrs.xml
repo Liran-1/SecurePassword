@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PasswordStrengthLayout">
+        <attr name="android:hint" format="string"/>
+        <attr name="mustContainLowerCaseLetters" format="boolean"/>
+        <attr name="mustContainUpperCaseLetters" format="boolean"/>
+        <attr name="mustContainSpecialCharacters" format="boolean"/>
+        <attr name="mustContainDigits" format="boolean"/>
+    </declare-styleable>
+</resources>

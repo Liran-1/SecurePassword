@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
 }
 
 android {
@@ -7,13 +7,10 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.securepassword"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -29,11 +26,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":SecurePassword"))
+
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "SecurePassword"
 include(":app")
- 
+include(":passwordstrengthmetertest")
+include(":SecurePassword")
